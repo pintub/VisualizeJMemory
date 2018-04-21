@@ -10,6 +10,8 @@ public class GCAgent implements GCAgentMBean {
 
     private int collectionSize;
 
+    private List<String> fatList;
+
     @Override
     public int getCollectionSize() {
         return collectionSize;
@@ -22,7 +24,7 @@ public class GCAgent implements GCAgentMBean {
 
     @Override
     public void createGcReachableCollection() {
-        List<String> fatList = getFatCollection(collectionSize);
+        fatList = getFatCollection(collectionSize);
     }
 
     @Override

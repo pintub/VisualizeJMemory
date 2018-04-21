@@ -11,8 +11,10 @@ public interface GCAgentMBean {
     void setCollectionSize(int collectionSize);
 
     //Not to be Garbage Collected
+    //Memory Leak here, OOM will happen
     void createGcReachableCollection();
 
     //To be Garbage Collected
+    //No memory leak , Garbage Collection will happen
     void createGcUnReachableCollection();
 }
