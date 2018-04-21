@@ -7,3 +7,5 @@ Practice purpose
 2. Visualize GC using VisualVM 
 
 3. HeapDump using VisualVM/Eclipse MAT
+
+4. GC Logs
